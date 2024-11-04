@@ -1,0 +1,26 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "jsx": "react",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "es6",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true
+  },
+  "typedocOptions": {
+    "entryPoints": ["src/main.tsx", "src/App.tsx", "src/UserProfile.tsx"],
+    "out": "docs",
+    "plugin": ["typedoc-plugin-markdown"],
+    "theme": "default",
+    "excludePrivate": true,
+    "excludeProtected": true,
+    "excludeExternals": true,
+    "hideGenerator": true
+  }
+}
